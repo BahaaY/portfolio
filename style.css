@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, gray, black);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+.main-title {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.item:hover{
+    background: black;
+    color: white;
+}
+
+.item .text {
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 22px;
+    top: 10px;
+}
+
+.item:hover {
+    animation: slide 0.3s linear forwards;
+}
+
+#icon{
+    font-size: 23px;
+}
+
+@keyframes slide {
+    0% {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    100% {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
