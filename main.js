@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $("#btn_about_me").click(function(){
+        remove_class_active();
+        $(this).addClass("active");
+        $("#section-about-me").slideDown();
+    });
+    $("#btn_certifications").click(function(){
+        remove_class_active();
+        $(this).addClass("active");
+        $("#section-certifications").slideDown();
+    });
+    $("#btn_projects").click(function(){
+        remove_class_active();
+        $(this).addClass("active");
+        $("#section-projects").slideDown();
+    });
+    function remove_class_active(){
+        $("#btn_about_me").removeClass("active");
+        $("#btn_certifications").removeClass("active");
+        $("#btn_projects").removeClass("active");
+        $("#section-about-me").hide();
+        $("#section-certifications").hide();
+        $("#section-projects").hide();
+    }
+});
