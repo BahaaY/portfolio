@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -18,8 +19,9 @@
     <!-- Font aweson -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CSS -->
+    <!-- CSS & JS-->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 
 </head>
 <body>
@@ -29,15 +31,15 @@
             <div class="col-md-6 header">
                 <div class="form-group p-0 m-0">
                     <div class="row">
-                        <a href="#about-me" class="col header-item">
+                        <div class="col header-item active" id="btn_about_me">
                             About Me
-                        </a>
-                        <a href="" class="col header-item">
+                        </div>
+                        <div class="col header-item" id="btn_certifications">
                             Certifications
-                        </a>
-                        <a href="#projects" class="col header-item">
+                        </div>
+                        <div class="col header-item" id="btn_projects">
                             Projects
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,8 +47,8 @@
         </div>
     </div>
     <div class="gap"></div>
-    <div class="container-fluid" id="container">
-        <section id="about-me">
+    <div class="container-fluid" id="container-sections">
+        <section id="section-about-me">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -80,7 +82,31 @@
             </div>
         </section>
         <div class="gap"></div>
-        <section id="projects">
+        <section id="section-certifications">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <span class="h3">
+                                        Certifications
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </section>
+        <div class="gap"></div>
+        <section id="section-projects">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -100,7 +126,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <a href="https://github.com/BahaaY" class="project">
-                                        <i class="fa fa-github" id="icon"></i>
+                                        <i class="fa fa-github" id="project-icon"></i>
                                         <span class="text">GitHub</span>
                                     </a>
                                 </div>
@@ -110,7 +136,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <a href="http://webshop.great-site.net" class="project">
-                                        <i class="fa fa-globe" id="icon"></i>
+                                        <i class="fa fa-globe" id="project-icon"></i>
                                         <span class="text">E-Commerce Website</span>
                                     </a>
                                 </div>
@@ -120,7 +146,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <a href="http://livechat.great-site.net" class="project">
-                                        <i class="fa fa-globe" id="icon"></i>
+                                        <i class="fa fa-globe" id="project-icon"></i>
                                         <span class="text">Chatting Website</span>
                                     </a>
                                 </div>

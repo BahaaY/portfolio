@@ -45,7 +45,7 @@ body {
 }
 
 .header-item:hover{
-    background-color: black;
+    background-color: lightblue;
     color: white;
 }
 
@@ -59,9 +59,11 @@ a{
 
 /* Body */
 
-#container{
-    position: relative;
-    top: 65px;
+#container-sections{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 img {
@@ -69,10 +71,13 @@ img {
     height: 200px;
 }
 
+#section-projects {
+    display: none;
+}
+
 .project {
     display: flex;
     align-items: center;
-    text-decoration: none !important;
     padding: 10px;
     border: 1px solid white;
     border-radius: 100px;
@@ -96,7 +101,7 @@ img {
     top: 10px;
 }
 
-#icon{
+#project-icon{
     font-size: 23px;
 }
 
