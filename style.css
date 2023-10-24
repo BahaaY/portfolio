@@ -10,6 +10,7 @@ html, body {
     color: #fff;
     overflow-x: hidden;
     background: #2F3238;
+    overflow-y: hidden;
 }
 
 .gap {
