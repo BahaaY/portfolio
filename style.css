@@ -76,6 +76,10 @@ img {
     display: none;
 }
 
+#section-certifications {
+    display: none;
+}
+
 .project {
     display: flex;
     align-items: center;
