@@ -61,25 +61,14 @@ a{
 /* Body */
 
 #container-sections{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: 5px;
-}
-
-.section{
-    max-height: 550px;
-    overflow-x: hidden;
     overflow-y: auto;
+    height: 100%;
+    margin-top: 70px;
+    padding-bottom: 70px;
 }
 
 img {
     width: 200px;
-}
-
-#img_certificate {
-    width: 310px !important;
 }
 
 .h3{

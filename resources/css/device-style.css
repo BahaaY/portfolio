@@ -1,6 +1,5 @@
 #device-navbar{
     display: none;
-    z-index: 100;
 }
 
 .device_menu {
@@ -26,10 +25,6 @@
     padding: 10px;
     cursor: pointer;
     transition: all 150ms ease-in-out;
-}
-
-#bars-icon:hover{
-    color: lightblue;
 }
 
 .row-close{
