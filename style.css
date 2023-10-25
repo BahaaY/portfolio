@@ -76,7 +76,8 @@ img {
     display: none;
 }
 
-#section-certifications {
+#section-certifications,
+#section-courses {
     display: none;
 }
 
