@@ -21,26 +21,36 @@
 
     <!-- CSS & JS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="device-style.css">
     <script src="main.js"></script>
 
 </head>
 <body>
+    <div class="container" id="device-navbar">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group text-right">
+                    <i class="fa fa-solid fa-bars" id="bars-icon" onclick="open_device_menu();"></i>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container" id="navbar">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 header">
                 <div class="form-group p-0 m-0">
                     <div class="row">
-                        <div class="col header-item active" id="btn_about_me">
+                        <div class="col header-item active" id="btn_about_me" onclick="about_me();">
                             About Me
                         </div>
-                        <div class="col header-item" id="btn_courses">
+                        <div class="col header-item" id="btn_courses" onclick="courses();">
                             Courses
                         </div>
-                        <div class="col header-item" id="btn_certifications">
+                        <div class="col header-item" id="btn_certifications" onclick="certifications();">
                             Certifications
                         </div>
-                        <div class="col header-item" id="btn_projects">
+                        <div class="col header-item" id="btn_projects" onclick="projects();">
                             Projects
                         </div>
                     </div>
@@ -209,6 +219,37 @@
                 <div class="col-md-3"></div>
             </div>
         </section>
+    </div>
+    <div class="device_menu" id="device-menu">
+        <div class="container-fluid p-0 m-0">
+            <div class="row">
+                <div class="col-md-12 p-0 m-0">
+                    <div class="form-group p-0 m-0">
+                        <div class="row">
+                            <div class="col-md-12 device-menu-item active" id="btn_device_about_me" onclick="device_about_me();">
+                                About Me
+                            </div>
+                            <div class="col-md-12 device-menu-item" id="btn_device_courses" onclick="device_courses();">
+                                Courses
+                            </div>
+                            <div class="col-md-12 device-menu-item" id="btn_device_certifications" onclick="device_certifications();">
+                                Certifications
+                            </div>
+                            <div class="col-md-12 device-menu-item" id="btn_device_projects" onclick="device_projects()">
+                                Projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-close">
+                <div class="col-md-12">
+                    <div class="form-group p-0 m-0 text-center">
+                        <i class="fa fa-close" id="close-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
