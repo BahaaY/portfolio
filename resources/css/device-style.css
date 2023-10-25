@@ -26,6 +26,7 @@
     padding: 10px;
     cursor: pointer;
     transition: all 150ms ease-in-out;
+    margin-top: 15px;
 }
 
 #bars-icon:hover{
