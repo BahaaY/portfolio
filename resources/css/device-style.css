@@ -35,16 +35,13 @@
     position: fixed;
     bottom: 0px;
     width: 100%;
+    display: none;
 }
 
 #close-icon{
     font-size: 30px;
     padding: 10px;
     transition: all 150ms ease-in-out;
-}
-
-#close-icon:hover{
-    color: red;
 }
 
 @media screen and (max-width:400px) {

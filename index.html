@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link href="portfolio-icon.svg" rel="icon">
-    <link href="portfolio-icon.svg" rel="apple-touch-icon">
+    <link href="resources/images/portfolio-icon.svg" rel="icon">
+    <link href="resources/images/portfolio-icon.svg" rel="apple-touch-icon">
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,17 +20,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS & JS-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="device-style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/device-style.css">
+    <script src="resources/js/main.js"></script>
 
 </head>
 <body>
     <div class="container" id="device-navbar">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" onclick="open_device_menu();">
                 <div class="form-group text-right">
-                    <i class="fa fa-solid fa-bars" id="bars-icon" onclick="open_device_menu();"></i>
+                    <i class="fa fa-solid fa-bars" id="bars-icon"></i>
                 </div>
             </div>
         </div>
@@ -59,23 +59,21 @@
             <div class="col-md-3"></div>
         </div>
     </div>
-    <div class="gap"></div>
     <div class="container-fluid" id="container-sections">
         <section id="section-about-me">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
                                     <span class="h3">
-                                        ABOUT ME
+                                        About Me
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="gap"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <p>Hi there, I’m <strong>Bahaa Yassine</strong>.</p>
@@ -86,7 +84,7 @@
                                 </p>
                             </div>
                             <div class="col-md-6 text-center">
-                                <img src="image.jpg">
+                                <img src="resources/images/image.jpg">
                             </div>
                         </div>
                     </div>
@@ -94,13 +92,12 @@
                 <div class="col-md-3"></div>
             </div>
         </section>
-        <div class="gap"></div>
         <section id="section-courses">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
                                     <span class="h3">
@@ -109,16 +106,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gap"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <ul>
+                                    <ul class="pl-3">
                                         <li>
-                                            Laravel
+                                            <b>Certificate from Udemy - 37 hours.</b>
                                             <p>
-                                                Learn to use routes, controllers, views, middleware, sessions, models, migrations,
-                                                SQL queries and much more to make advanced applications.
+                                                This course encompassed a wide range of essential competencies, 
+                                                including Object-Oriented PHP, effective use of arrays and data structures, 
+                                                validation and secure handling of files, robust debugging techniques and error management. 
+                                                Furthermore, I've gained insight into safeguarding PHP applications from security threats and 
+                                                preparing them for seamless deployment to web servers.
                                             </p>
                                         </li>
                                     </ul>
@@ -126,12 +125,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <ul>
+                                    <ul class="pl-3">
                                         <li>
-                                            PHP
+                                            <b>Laravel Certificate from Udemy - 43 hours.</b>
                                             <p>
-                                                Learn to use object oriented PHP, functions, sessions, cookies, authentication, Jquery, Ajax,
-                                                Bootstrap and much more with practical exercices & projetcs.
+                                                During this course, I have acquired to utilizing Laravel's powerful features, 
+                                                such as Eloquent ORM for database interaction, Blade templating, authentication 
+                                                and authorization systems, routing, middleware and testing.
                                             </p>
                                         </li>
                                     </ul>
@@ -143,13 +143,12 @@
                 <div class="col-md-3"></div>
             </div>
         </section>
-        <div class="gap"></div>
         <section id="section-certifications">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
                                     <span class="h3">
@@ -158,23 +157,29 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gap"></div>
                         <div class="row">
-                            
+                            <div class="col-md-6">
+                                <div class="form-group text-center">
+                                    <a href="resources/images/php.jpg"><img src="resources/images/php.jpg" id="img_certificate"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group text-center">
+                                    <a href="resources/images/laravel.jpg"><img src="resources/images/laravel.jpg" id="img_certificate"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
         </section>
-        <div class="gap"></div>
         <section id="section-projects">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <div class="gap"></div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
                                     <span class="h3">
@@ -183,7 +188,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gap"></div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -222,30 +226,24 @@
     </div>
     <div class="device_menu" id="device-menu">
         <div class="container-fluid p-0 m-0">
-            <div class="row">
-                <div class="col-md-12 p-0 m-0">
-                    <div class="form-group p-0 m-0">
-                        <div class="row">
-                            <div class="col-md-12 device-menu-item active" id="btn_device_about_me" onclick="device_about_me();">
-                                About Me
-                            </div>
-                            <div class="col-md-12 device-menu-item" id="btn_device_courses" onclick="device_courses();">
-                                Courses
-                            </div>
-                            <div class="col-md-12 device-menu-item" id="btn_device_certifications" onclick="device_certifications();">
-                                Certifications
-                            </div>
-                            <div class="col-md-12 device-menu-item" id="btn_device_projects" onclick="device_projects()">
-                                Projects
-                            </div>
-                        </div>
-                    </div>
+            <div class="row p-0 m-0">
+                <div class="col-md-12 device-menu-item active" id="btn_device_about_me" onclick="about_me();">
+                    About Me
+                </div>
+                <div class="col-md-12 device-menu-item" id="btn_device_courses" onclick="courses();">
+                    Courses
+                </div>
+                <div class="col-md-12 device-menu-item" id="btn_device_certifications" onclick="certifications();">
+                    Certifications
+                </div>
+                <div class="col-md-12 device-menu-item" id="btn_device_projects" onclick="projects()">
+                    Projects
                 </div>
             </div>
-            <div class="row row-close">
+            <div class="row row-close p-0 m-0" id="row_close">
                 <div class="col-md-12">
-                    <div class="form-group p-0 m-0 text-center">
-                        <i class="fa fa-close" id="close-icon"></i>
+                    <div class="form-group text-center">
+                        <i class="fa fa-close" id="close-icon" onclick="close_menu();"></i>
                     </div>
                 </div>
             </div>
