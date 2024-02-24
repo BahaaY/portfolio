@@ -38,6 +38,10 @@ function projects(){
     });
 }
 
+function cv(){
+    window.location.href="resources/images/Bahaa Yassine CV.pdf";
+}
+
 function remove_class_active(){
     $("#btn_about_me").removeClass("active");
     $("#btn_courses").removeClass("active");

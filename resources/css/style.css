@@ -76,12 +76,10 @@ img {
     text-decoration: underline;
 }
 
-#section-projects {
-    display: none;
-}
-
+#section-projects,
 #section-certifications,
-#section-courses {
+#section-courses,
+#section-cv {
     display: none;
 }
 
