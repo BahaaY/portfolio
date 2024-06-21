@@ -39,7 +39,7 @@ function projects(){
 }
 
 function cv(){
-    window.location.href="resources/images/Bahaa Yassine CV.pdf";
+    window.location.href="resources/images/Bahaa Yassine CV1.pdf";
 }
 
 function remove_class_active(){
