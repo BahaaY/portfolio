@@ -39,4 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
         navigation.classList.toggle('hide');
     }
 
+    const menuLinks = document.querySelectorAll('.navigation-menu a');
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.menu').classList.remove('show');
+        });
+    });
+
 });
