@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Down/Up Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        #toggleButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #slidingDiv {
+            width: 100%;
+            height: 0;
+            background-color: lightblue;
+            overflow: hidden;
+            transition: height 0.5s ease;
+        }
+
+        #slidingDiv.expanded {
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton">Toggle Div</button>
+    <div id="slidingDiv"></div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var div = document.getElementById('slidingDiv');
+            div.classList.toggle('expanded');
+        });
+    </script>
+</body>
+</html>

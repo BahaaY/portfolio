@@ -8,6 +8,49 @@
     scroll-behavior: smooth; 
 }
 
+.bars-icon {
+    display: none;
+    font-size: 1.6em;
+    color: #3a6cf4;
+}
+
+.menu {
+    position: fixed;
+    top: 63px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    height: 0px;
+    transition: height 0.5s ease;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.menu.show {
+    height: 300px;
+}
+
+.navigation.hide {
+    display: none;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.navigation-menu a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+}
 
 header {
     background-color: #f0f0f0;
@@ -267,11 +310,27 @@ section {
         align-items: center;
     }
 
+    .navigation {
+        display: block;
+    }
+
+    .bars-icon{
+        display: none;
+    }
+
+    .menu {
+        height: 0px;
+    }
+
 }
 
-@media (max-width:641px){
+@media (max-width:670px){
     body{
         font-size: 12px;
+    }
+
+    .menu { 
+        top: 57px;
     }
 
     .main-content h2{
@@ -281,14 +340,23 @@ section {
     .main-content h3{
         font-size: 1.4em;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    .bars-icon{
+        display: block;
+    }
+    
 }
 
-@media (max-width:430px){
+@media (max-width: 296px){
     body{
         font-size: 10px;
     }
-
-    .logo{
-        display: none;
+    
+    .menu { 
+        top: 51px;
     }
 }

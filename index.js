@@ -28,4 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    document.getElementById("bars-icon").onclick = function(){
+        var menu = document.querySelector('.menu');
+        var navigation = document.querySelector('.navigation');
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        } else {
+            menu.classList.add('show');
+        }
+        navigation.classList.toggle('hide');
+    }
+
 });
