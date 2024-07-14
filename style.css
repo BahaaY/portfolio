@@ -16,12 +16,12 @@
 
 .menu {
     position: fixed;
-    top: 63px;
+    top: 62px;
     text-align: center;
     cursor: pointer;
     width: 100%;
     z-index: 999;
-    background-color: white;
+    background-color: #f0f0f0;
     height: 0px;
     transition: height 0.5s ease;
     overflow: hidden;
@@ -330,7 +330,7 @@ section {
     }
 
     .menu { 
-        top: 57px;
+        top: 56px;
     }
 
     .main-content h2{
@@ -357,6 +357,6 @@ section {
     }
     
     .menu { 
-        top: 51px;
+        top: 50px;
     }
 }
